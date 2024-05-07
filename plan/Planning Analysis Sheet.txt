@@ -1,0 +1,40 @@
+Here's a planning analysis sheet for Dellamaison's website:
+
+* Goal: Create a professional website to promote the release of a new album, showcase merchandise, sell tickets for an upcoming tour, and connect with fans.
+
+* Working Title of Each Page:
+
+Home: Introduction to Alan Maizon, latest news, and featured music.
+Tour: Upcoming shows, tour dates, and ticket information.
+Contact: Form for contact, press inquiries, and fan feedback.
+Merch: Merchandise and music downloads.
+Landing Page: Sign Up for Newsletter.
+
+* List of Sources:
+
+Music (External links)
+Tickets (External links)
+Videos (External links)
+Tour Dates Schedule
+Artwork & Pictures
+Merchandise Designs
+
+* Sitemap: Octopus
+Home
+Tour
+Contact
+Merch
+Newsletter
+404 Error
+
+*Wireframe: Figma
+Digital wireframe of each page's layout and structure
+Defined header, footer, navigation, and content areas
+Colors Palette - Gradient Red, Font Family - Helvetica/Roman
+
+*HTML and CSS: VS Code - Code Pen
+Write HTML structure and content for each page
+Design and write CSS for layout, typography, and visual styling
+
+*Hosting: GitHub
+Upload website files to hosting server

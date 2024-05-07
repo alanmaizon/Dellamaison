@@ -1,0 +1,147 @@
+* {
+	padding:0;
+	margin:0;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  font-family: 'Times New Roman', Georgia, sans-serif;
+	color:#ffffff;
+  background-color: #A40D27;
+	list-style-type: none;
+}
+
+a{
+  font-family: helvetica;
+}
+/* unvisited link */
+a:link {
+	color: #ffffff;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: #ffffff;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: #ffffff;
+  }
+  
+  /* selected link */
+  a:active {
+	color: #F08093;
+  }
+
+img{
+  	margin-bottom: 50px;
+	width: 300px;
+	height: auto;
+  }
+
+body {
+	margin: 0 200px;
+	text-align: center;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: (50% 50%);
+	grid-gap: 10px;
+
+}
+
+.container{
+	padding: 0 20%;
+}
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+	padding: 0;
+	text-align: center;
+}
+
+header nav {
+	margin:20px auto;
+}
+
+header nav ul {
+	list-style:none;
+	text-align:center;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+	}
+
+header nav ul li a {
+	display:block;
+	text-decoration:none;
+	padding: 20px 10px;
+}
+
+ p { 
+  font-family: helvetica;
+	margin-bottom: 5%; 
+  letter-spacing: 0.2px; 
+  font-weight: lighter;
+	}
+
+h1 {
+  font: normal 3em 'New Times Roman', georgia;
+  margin-bottom: 5%;
+  letter-spacing: 0.2px; 
+  font-weight: lighter;
+}
+
+h3 { 
+	font: normal 2em georgia, sans-serif;
+  font-weight:lighter;
+	letter-spacing: 0.2px; 
+	margin-bottom: 5%; 
+	color: #000000;
+	}
+
+a.title{
+    text-decoration: none;
+}
+
+ button {
+   background-color: #000000;
+   font: normal 0.9em georgia;
+   font-family: helvetica;
+   font-weight: lighter;
+   padding:20px;
+   margin:5%;
+   border-style: none;
+   border-radius: 5px;
+  }
+
+button a{
+	background-color: #000000;
+	text-decoration: none;
+}
+
+footer ul li a{
+  text-decoration: none;
+  padding:10px;
+}
+footer ul li {
+	display:inline-block;
+	position: relative;
+  margin:10px auto;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		margin: 5% auto;
+		padding-top:0;
+	}
+
+	header {
+		width: 100%;
+	}
+}

@@ -1,0 +1,275 @@
+* {
+	padding:0;
+	margin:0;
+	text-align: center;
+	-webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+  font-family: 'Times New Roman', Georgia, sans-serif;
+	color:#000;
+  background-color: #ffffff;
+	list-style-type: none;
+}
+
+header {
+	width: 100%;
+	padding: 0;
+	text-align: center;
+}
+
+header nav {
+	margin:20px auto;
+}
+
+header nav ul {
+	list-style:none;
+	text-align:right;
+	margin-right: 40px;
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+	}
+
+header nav ul li a {
+	display:block;
+	text-decoration:none;
+	padding: 20px 10px;
+}
+
+
+ header a{
+	font-family: helvetica;
+  }
+  /* unvisited link */
+  header  a:link {
+	  color: #666666;
+	}
+	
+	/* visited link */
+	header	a:visited {
+	  color: #666666;
+	}
+	
+	/* mouse over link */
+	header	a:hover {
+	  color: #666666;
+	}
+	
+	/* selected link */
+	header	a:active {
+	  color: #F08093;
+	}
+
+	footer a{
+		font-family: helvetica;
+	  }
+	  /* unvisited link */
+	  footer  a:link {
+		  color: #666666;
+		}
+		
+		/* visited link */
+		footer	a:visited {
+		  color: #666666;
+		}
+		
+		/* mouse over link */
+		footer	a:hover {
+		  color: #666666;
+		}
+		
+		/* selected link */
+		footer	a:active {
+		  color: #F08093;
+		}
+
+img{
+  	margin-bottom: 50px;
+	height: 300px;
+	width: auto;
+  }
+
+body {
+	margin: 0;
+	text-align: center;
+	font-family: sans-serif;
+	display: grid;
+	grid-template-columns: (50% 50%);
+	grid-gap: 10px;
+
+
+}
+
+#logo{
+	position:absolute;
+	top: 33px;
+	left:40px;
+	color:#A40D27;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: lighter;
+	letter-spacing: 0.2px; 
+}
+
+.grid-item{
+	padding: 0 20%;
+
+}
+.grid-item table{
+	border: 1px solid #ccc;
+	border-collapse: separate; /* remove space between cells */
+	border-radius: 8px;
+
+  }
+
+  .grid-item table thead{
+	font-weight: bold;
+	color:#000;
+	font-family: helvetica;
+    padding: 8px;
+    text-align: left;
+	border: none; /* remove borders from table cells */}
+  
+  .grid-item th{
+
+	color:#aaa;
+	font-family: helvetica;
+    padding: 8px;
+    text-align: left;
+	border: none; /* remove borders from table cells */}
+
+	.grid-item td {
+	font-family: helvetica;
+    padding: 8px;
+    text-align: left;
+	border: none; /* remove borders from table cells */
+  }
+  .grid-item .icon-ticket{
+	text-align: center;
+  }
+
+ p { 
+  font-family: helvetica;
+	margin-bottom: 5%; 
+  letter-spacing: 0.2px; 
+  font-weight: lighter;
+	}
+
+h1 {
+  font: normal 3em 'New Times Roman', georgia;
+  letter-spacing: 0.2px; 
+  font-weight: lighter;
+  padding: 0 20%;
+}
+
+h3 { 
+	font: normal 2em georgia, sans-serif;
+  	font-weight:lighter;
+	letter-spacing: 0.2px; 
+	margin-bottom: 5%; 
+	color: #000000;
+	}
+
+ button {
+   background-color: #A40D27;
+   color:#ffffff;
+   font: normal 1.5em georgia;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: lighter;
+   padding:2%;
+   margin-top:5%;
+   border-radius: 10px;
+   border-style: none;
+   
+  }
+  button a{
+	background-color: #A40D27;
+	color:#ffffff;
+	text-decoration: none;
+}
+button	a:active {
+	color: #F08093;
+  }
+
+footer ul li a{
+  text-decoration: none;
+  padding:10px;
+  font-family: Helvetica;
+  color:#666666
+}
+footer ul li {
+	display:inline-block;
+	position: relative;
+  	margin:10px auto;
+
+}  
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+  }
+  
+  .grid-item {
+	background-color: #fff;
+
+  }
+
+	.grid-item a{
+    text-decoration: none;
+	margin: 20px;
+
+}
+a{
+    text-decoration: none;}
+	
+  .grid-container2 img{
+	margin: 5% 0 ;
+	padding: 5% 0 ;
+	width: 50%;
+	height: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+	body {
+		margin: 5% auto;
+		padding-top:0;  
+		text-align:center;
+	}
+
+	header {
+		width: 100%;
+
+	}
+	button {
+		background-color: #A40D27;
+		color:#ffffff;
+		font: normal 1em georgia;
+		font-family: 'Times New Roman', Times, serif;
+		font-weight: lighter;
+		padding:4%;
+		margin-top:5%;
+		border-radius: 10px;
+		border-style: none;
+	}
+		button a{
+			background-color: #A40D27;
+			color:#ffffff;
+			text-decoration: none;
+		}
+		
+		.grid-container {
+		grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+		
+		}
+
+	
+	.grid-item{
+		padding: 0 15%;
+
+	}
+		#logo{
+			display: none;}
+	}
