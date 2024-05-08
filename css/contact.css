@@ -165,7 +165,6 @@ label {
   color: #A40D27;
   padding: 12px 12px 12px 0;
   display: inline-block;
-  text-align: left;
 }
 
 /* Style the submit button */
@@ -174,9 +173,9 @@ input[type=submit] {
   text-align: center;
   color: white;
   padding: 18px 20px;
-  border: none;
+  border-style: none;
   border-radius: 8px;
-  cursor: pointer;
+  margin-top: 15%;
   float: right;
   width: 75%
 }
@@ -189,11 +188,12 @@ input[type=submit] {
   text-align: left;
   }
 
-  input[type=submit] {
+  button[type=submit] {
   width: 100%;
   font-size: large;
   margin:10px 0;
   text-align: center;
+  
   }
   .container{
       margin-left:40px;
@@ -210,7 +210,7 @@ input[type=submit] {
 		width: 100%;
 	}
 
-  .columns, input[type=submit] {
+  .col, button[type=submit] {
     width: 100%;
     margin-top: 0;
     }
