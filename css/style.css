@@ -42,14 +42,14 @@ img{
   }
 
 body {
-	margin: 20px 200px;
+	margin: 20px;
 	text-align: center;
 	font-family: sans-serif;
 	display: grid;
 	grid-template-columns: (50% 50%);
 	grid-gap: 10px;
-
 }
+
 
 header {
 	width: 100%;
@@ -79,14 +79,13 @@ header nav ul li a {
 
  p { 
   font-family: helvetica;
-	margin: 5%; 
+  margin: 5%; 
   letter-spacing: 0.2px; 
   font-weight: lighter;
 	}
 
 h1 {
-  font: normal 2em 'New Times Roman', georgia;
-  margin-bottom: 5%;
+  font: normal 3em 'New Times Roman', georgia;
   letter-spacing: 0.2px; 
   font-weight: lighter;
 }
@@ -95,7 +94,7 @@ h3 {
 	font: normal 2em georgia, sans-serif;
   font-weight:lighter;
 	letter-spacing: 0.2px; 
-	margin-bottom: 5%; 
+	margin: 40px 15px;
 	color: #000000;
 	}
 
