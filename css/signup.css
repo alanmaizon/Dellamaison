@@ -105,7 +105,7 @@ input[type=text], select{
 	}
     input[type=text], select{
         text-align: left;
-        width: 80%;
+        width: 60%;
         padding: 12px;
         border: 1px solid #ccc;
         border-radius: 4px;

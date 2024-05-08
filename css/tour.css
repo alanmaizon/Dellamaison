@@ -1,14 +1,11 @@
 * {
 	padding:0;
 	margin:0;
-	text-align: center;
-	-webkit-box-sizing: border-box;
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box;
-  font-family: 'Times New Roman', Georgia, sans-serif;
-	color:#000;
-  background-color: #ffffff;
-	list-style-type: none;
+  	text-align: center;
+  	font-family: 'Times New Roman', Times, serif;
+	color:#000000;
+  	background-color: #ffffff;
+  	list-style-type: none;
 }
 
 header {
@@ -42,22 +39,19 @@ header nav ul li a {
  header a{
 	font-family: helvetica;
   }
-  /* unvisited link */
+
   header  a:link {
 	  color: #666666;
 	}
 	
-	/* visited link */
 	header	a:visited {
 	  color: #666666;
 	}
 	
-	/* mouse over link */
 	header	a:hover {
 	  color: #666666;
 	}
 	
-	/* selected link */
 	header	a:active {
 	  color: #F08093;
 	}
@@ -65,22 +59,19 @@ header nav ul li a {
 	footer a{
 		font-family: helvetica;
 	  }
-	  /* unvisited link */
+
 	  footer  a:link {
 		  color: #666666;
 		}
 		
-		/* visited link */
 		footer	a:visited {
 		  color: #666666;
 		}
 		
-		/* mouse over link */
 		footer	a:hover {
 		  color: #666666;
 		}
 		
-		/* selected link */
 		footer	a:active {
 		  color: #F08093;
 		}
@@ -98,8 +89,6 @@ body {
 	display: grid;
 	grid-template-columns: (50% 50%);
 	grid-gap: 10px;
-
-
 }
 
 #logo{
@@ -128,7 +117,8 @@ body {
 	font-family: helvetica;
     padding: 8px;
     text-align: left;
-	border: none; /* remove borders from table cells */}
+	border: none; /* remove borders from table cells */
+}
   
   .grid-item th{
 
@@ -136,7 +126,8 @@ body {
 	font-family: helvetica;
     padding: 8px;
     text-align: left;
-	border: none; /* remove borders from table cells */}
+	border: none; /* remove borders from table cells */
+}
 
 	.grid-item td {
 	font-family: helvetica;
@@ -170,7 +161,7 @@ h3 {
 	color: #000000;
 	}
 
- button {
+ a.button {
    background-color: #A40D27;
    color:#ffffff;
    font: normal 1.5em georgia;
@@ -181,13 +172,9 @@ h3 {
    border-radius: 10px;
    border-style: none;
    
-  }
-  button a{
-	background-color: #A40D27;
-	color:#ffffff;
-	text-decoration: none;
+
 }
-button	a:active {
+a.button active {
 	color: #F08093;
   }
 
@@ -235,13 +222,18 @@ a{
 	body {
 		padding-top:0;  
 		text-align:center;
+		background-image: url('img/profile.png');
+	}
+
+	.grid-container2 img{
+		display: none;
 	}
 
 	header {
 		width: 100%;
 
 	}
-	button {
+	a.button {
 		background-color: #A40D27;
 		color:#ffffff;
 		font: normal 1em georgia;
@@ -252,11 +244,6 @@ a{
 		border-radius: 10px;
 		border-style: none;
 	}
-		button a{
-			background-color: #A40D27;
-			color:#ffffff;
-			text-decoration: none;
-		}
 		
 		.grid-container {
 		grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));

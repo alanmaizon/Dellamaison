@@ -7,6 +7,10 @@
     background-color: #ffffff;
     list-style-type: none;
 }
+img{
+  width: 100px;
+  height: auto;
+}
 
 body {
 	margin: 0;
@@ -15,7 +19,10 @@ body {
 	display: grid;
 	grid-gap: 0;
 	grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
-	grid-template-rows: 1fr 1.2fr 1fr 1.8fr 1fr;
+	grid-template-rows: 0.5fr 0.3fr 1fr 0fr 1fr;
+}
+header{
+	grid-area:2/1/2/6;
 }
 main{
 	grid-area:4/6/3/1;
@@ -31,9 +38,9 @@ a{
 
 h4 { 
 
-    font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: #A40D27;
-  font-size: 45px;
+  font-size: 2em;
   letter-spacing: 0.2px; 
   font-weight: bold;
   text-align: center;
@@ -118,9 +125,6 @@ header nav ul {
   text-align:center;
 }
 #logo{
-  display: none;
-}
-img{
   display: none;
 }
 

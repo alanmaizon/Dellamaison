@@ -1,12 +1,13 @@
 * {
-	padding:0px;
+	padding:0;
 	margin:0;
-	text-align: center;
-	font-family: 'Times New Roman', Georgia, sans-serif;
-	color:#000;
-	background-color: #ffffff;
-	list-style-type: none;
+  text-align: center;
+  font-family: Helvetica;
+	color:#000000;
+  background-color: #ffffff;
+  list-style-type: none;
 }
+
 
 header {
 	width: 100%;
@@ -53,6 +54,13 @@ a:hover {
 
 a:active {
 	color: #F08093;
+}
+
+body {
+	text-align: center;
+	font-family: sans-serif;
+	display: grid;
+	grid-gap: 10px;
 }
 
 img{
