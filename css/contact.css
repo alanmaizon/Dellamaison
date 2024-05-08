@@ -63,7 +63,6 @@ a:link {
   }
 
 body {
-	margin: 0;
 	text-align: center;
 	font-family: sans-serif;
 	display: grid;
@@ -93,7 +92,7 @@ body {
  p { 
   font-family: helvetica;
   text-align: center;
-    margin-bottom: 5%; 
+  margin-bottom: 5%; 
   letter-spacing: 0.2px; 
   font-weight: lighter;
 	}
@@ -166,6 +165,7 @@ label {
   color: #A40D27;
   padding: 12px 12px 12px 0;
   display: inline-block;
+  text-align: left;
 }
 
 /* Style the submit button */
@@ -183,7 +183,7 @@ input[type=submit] {
 
 /* Style the container */
 
-.col-25, .col-75{
+.col{
   width: 100%;
   margin-top: 0;
   text-align: left;
@@ -204,14 +204,13 @@ input[type=submit] {
 
 @media screen and (max-width: 800px) {
 	body {
-		margin: 5% auto;
 		padding-top:0;
 	}
 	header {
 		width: 100%;
 	}
 
-  .col-25, .col-75, input[type=submit] {
+  .columns, input[type=submit] {
     width: 100%;
     margin-top: 0;
     }
@@ -220,7 +219,7 @@ input[type=submit] {
 }
 header nav ul {
 	list-style:none;
-  text-align:center;
+  text-align:right;
 }
 #logo{
   display: none;
