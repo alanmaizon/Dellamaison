@@ -164,11 +164,10 @@ h3 {
  a.button {
    background-color: #A40D27;
    color:#ffffff;
-   font: normal 1.5em georgia;
+   font: normal 1.3em georgia;
    font-family: 'Times New Roman', Times, serif;
    font-weight: lighter;
-   padding:2%;
-   margin-top:5%;
+   padding:15px;
    border-radius: 10px;
    border-style: none;
    
@@ -210,19 +209,15 @@ footer ul li {
 a{
     text-decoration: none;}
 	
-  .grid-container2 img{
-	margin: 5% 0 ;
-	padding: 5% 0 ;
-	width: 50%;
-	height: auto;
-}
+  .grid-container2 {
+	align-items: center;
+	padding:5%;}
 
 
 @media screen and (max-width: 800px) {
 	body {
 		padding-top:0;  
 		text-align:center;
-		background-image: url('img/profile.png');
 	}
 
 	.grid-container2 img{
@@ -236,21 +231,20 @@ a{
 	a.button {
 		background-color: #A40D27;
 		color:#ffffff;
-		font: normal 1em georgia;
+		font: normal 1.3em georgia;
 		font-family: 'Times New Roman', Times, serif;
 		font-weight: lighter;
-		padding:4%;
-		margin-top:5%;
+		padding:15px;
 		border-radius: 10px;
 		border-style: none;
+		
 	}
 		
 		.grid-container {
 		grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
 		
 		}
-
-	
+	}
 	.grid-item{
 		margin:5% ;
 		padding:0 ;
@@ -258,4 +252,3 @@ a{
 	}
 		#logo{
 			display: none;}
-	}
