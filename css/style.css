@@ -36,25 +36,19 @@ a:link {
 
 img{
   	margin-bottom: 50px;
-	width: 300px;
+	width: 200px;
 	height: auto;
+
   }
 
 body {
-	margin: 0 200px;
+	margin: 20px 200px;
 	text-align: center;
 	font-family: sans-serif;
 	display: grid;
 	grid-template-columns: (50% 50%);
 	grid-gap: 10px;
 
-}
-
-.container{
-	padding: 0 20%;
-}
-.menu_bar {
-	display:none;
 }
 
 header {
@@ -85,13 +79,13 @@ header nav ul li a {
 
  p { 
   font-family: helvetica;
-	margin-bottom: 5%; 
+	margin: 5%; 
   letter-spacing: 0.2px; 
   font-weight: lighter;
 	}
 
 h1 {
-  font: normal 3em 'New Times Roman', georgia;
+  font: normal 2em 'New Times Roman', georgia;
   margin-bottom: 5%;
   letter-spacing: 0.2px; 
   font-weight: lighter;
@@ -137,8 +131,8 @@ footer ul li {
 
 @media screen and (max-width: 800px) {
 	body {
-		margin: 5% auto;
-		padding: 5%;
+		margin: 0;
+		padding: 0;
 	}
 
 	header {
