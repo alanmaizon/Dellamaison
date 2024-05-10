@@ -64,24 +64,22 @@ body {
 }
 
 #logo{
+  position:absolute;
+  top: 22px;
+  left:40px;
+  height: 50px;
+}
+#name{
 	position:absolute;
 	top: 33px;
-	left:40px;
-	color:#A40D27;
-	font-family: 'Times New Roman', Times, serif;
+	left:100px;
+	color:#a40d0d;
+	font-family:'Times New Roman', Times, serif;
 	font-weight: lighter;
 	letter-spacing: 0.2px; 
-}
-
-.container{
-  margin-left:40px;
-  margin-right: 300px;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+	height: 50px;
+  }
+  
 
  p { 
   font-family: helvetica;
@@ -137,6 +135,16 @@ footer ul li a{
     padding:10px;
 }
 
+.container{
+  margin-left:40px;
+  width: 80%;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 0.4fr;
+}
+
 /* Style inputs, select elements and textareas */
 input[type=text], select{
   text-align: left;
@@ -190,10 +198,7 @@ input[type=submit] {
   margin:10px 0;
   text-align: center;
   }
-  .container{
-      margin-left:40px;
-      width: 80%;
-  }
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 
@@ -201,29 +206,24 @@ input[type=submit] {
 	body {
 		padding-top:0;
 	}
-	header {
-		width: 100%;
-	}
 
   button[type=submit] {
     width: 100%;
     margin-top: 10%;
     }
     .container{
-        margin: 0 20%;
-}
-header nav ul {
-	list-style:none;
-  text-align:right;
-}
-#logo{
+        width: 80%;
+}        
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+
+#logo, #name{
   display: none;
 }
 img{
   display: none;
-}
-
-.grid-container{
-  width: 166%
 }
 }
