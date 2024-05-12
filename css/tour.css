@@ -40,21 +40,21 @@ header nav ul li a {
 	font-family: helvetica;
   }
 
-  header  a:link {
-	  color: #666666;
-	}
-	
-	header	a:visited {
-	  color: #666666;
-	}
-	
-	header	a:hover {
-	  color: #666666;
-	}
-	
-	header	a:active {
-	  color: #F08093;
-	}
+  a:link {
+	color: #666666;
+}
+
+a:visited {
+	color: #666666;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:active {
+	color: #F08093;
+}
 
 	footer a{
 		font-family: helvetica;
@@ -69,7 +69,7 @@ header nav ul li a {
 		}
 		
 		footer	a:hover {
-		  color: #666666;
+		  color: #000000;
 		}
 		
 		footer	a:active {
