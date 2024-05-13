@@ -34,6 +34,22 @@ footer{
 
 a{
     color: #666666;
+    
+}
+a:link {
+	color: #666666;
+}
+
+a:visited {
+	color: #666666;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:active {
+	color: #F08093;
 }
 
 h4 { 

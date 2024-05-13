@@ -8,6 +8,10 @@
 	list-style-type: none;
 }
 
+abbr{
+	text-decoration: none;
+}
+
 a{
   font-family: helvetica;
 }
