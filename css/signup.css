@@ -3,12 +3,12 @@
 	margin:0;
   text-align: center;
     font-family: Helvetica;
-	color:#000000;
-    background-color: #ffffff;
+	color:#fff;
     list-style-type: none;
 }
 
 body {
+  background-image: url(../img/hero.jpg);
 	margin: 0;
 	text-align: center;
 	font-family: sans-serif;
@@ -26,19 +26,19 @@ footer{
 }
 
 a{
-    color: #666666;
+    color: #fff;
 }
 
 a:link {
-	color: #666666;
+	color: #fff;
 }
 
 a:visited {
-	color: #666666;
+	color: #fff;
 }
 
 a:hover {
-	color: #000000;
+	color: #ccc;
 }
 
 a:active {
@@ -66,7 +66,7 @@ h1 {
 }
 
 p{
-    color: #666666;
+    color: #fff;
     font-family: Helvetica;
     margin: 1em;
 }
@@ -88,7 +88,9 @@ a.title{
    border-style: none;
    cursor: pointer;
   }
-
+  button:hover {
+    color:#ccc;
+  }
   footer ul li {
     display:inline-block;
     position: relative;
