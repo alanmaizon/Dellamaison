@@ -260,16 +260,13 @@ a{
 		text-align:center;
 	}
 
-	.grid-container2 img{
+	.grid-container2{
 		display: none;
 	}
 
 	header {
 		width: 100%;
 
-	}
-	a.button {
-		display: none;
 	}
 		
 		.grid-container {
