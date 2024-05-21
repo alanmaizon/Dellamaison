@@ -269,15 +269,7 @@ a{
 
 	}
 	a.button {
-		background-color: #A40D27;
-		color:#ffffff;
-		font: normal 1.3em georgia;
-		font-family: 'Times New Roman', Times, serif;
-		font-weight: lighter;
-		padding:15px;
-		border-radius: 10px;
-		border-style: none;
-		
+		display: none;
 	}
 		
 		.grid-container {
