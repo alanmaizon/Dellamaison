@@ -4,15 +4,13 @@
   text-align: center;
   font-family: Helvetica;
 	color:#000000;
-  background-color: #ffffff;
   list-style-type: none;
+
 }
-
-
 header {
 	width: 100%;
 	padding: 0;
-	text-align: center;
+	text-align: center; 
 }
 
 header nav {
@@ -60,26 +58,9 @@ body {
 	text-align: center;
 	font-family: sans-serif;
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 0px;
+  background-image: url(../img/hero.jpg);
 }
-
-#logo{
-  position:absolute;
-  top: 22px;
-  left:40px;
-  height: 50px;
-}
-#name{
-	position:absolute;
-	top: 33px;
-	left:100px;
-	color:#a40d0d;
-	font-family:'Times New Roman', Times, serif;
-	font-weight: lighter;
-	letter-spacing: 0.2px; 
-	height: 50px;
-  }
-  
 
  p { 
   font-family: helvetica;
@@ -104,47 +85,51 @@ h3 {
   text-align: left;
 	letter-spacing: 0.2px; 
 	margin-bottom: 5%; 
-	color: #666666;
+	color: #fff;
 	}
 
 a.title{
     text-decoration: none;
 }
 
- button {
-   color: #ffffff;
-   background-color: #A40D27;
-   font: normal 0.9em georgia;
-   font-family: helvetica;
-   font-weight: lighter;
-   padding:20px;
-   margin:5%; 
-   border-radius: 10px;
-   border-style: none;
-   cursor: pointer;
+  footer, footer ul{
+    background-color: #000000;
   }
 
   footer ul li {
+    background-color: #000;
     display:inline-block;
     position: relative;
-      margin:10px auto;
+    margin:10px auto;
   
 }
 footer ul li a{
+    background-color: #000;
     text-decoration: none;
     padding:10px;
 }
 
+footer ul li a:hover{
+  color: #A40D27;
+}
 .container{
   margin-left:40px;
-  width: 80%;
+  width: 90%;
 }
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 0.4fr;
+	grid-template-columns: 0.5fr 0.4fr;
+
 }
 
+/* Style the container */
+
+.col{
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  }
 /* Style inputs, select elements and textareas */
 input[type=text], select{
   text-align: left;
@@ -165,39 +150,25 @@ textarea{
   resize: none;
 }
 
-/* Style the label to display next to the inputs */
-label {
-  color: #A40D27;
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
 /* Style the submit button */
-input[type=submit] {
+button[type=submit] {
   background-color: #A40D27;
+  font-size: large;
   text-align: center;
   color: white;
   padding: 18px 20px;
+  margin: 5px 0;
   border-radius: 8px;
+  float: left;
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+   }
 
-  float: right;
-  width: 75%
+button[type=submit]:hover {
+  color: #000;
 }
-
-/* Style the container */
-
-.col{
-  width: 100%;
-  margin-top: 0;
-  text-align: left;
-  }
-
-  button[type=submit] {
-  width: 100%;
-  font-size: large;
-  margin:10px 0;
-  text-align: center;
-  }
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -207,10 +178,6 @@ input[type=submit] {
 		padding-top:0;
 	}
 
-  button[type=submit] {
-    width: 100%;
-    margin-top: 10%;
-    }
     .container{
         width: 80%;
 }        
@@ -223,6 +190,7 @@ input[type=submit] {
 #logo, #name{
   display: none;
 }
+
 img{
   display: none;
 }

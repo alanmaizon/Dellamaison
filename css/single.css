@@ -1,0 +1,359 @@
+* {
+	padding:0;
+	margin:0;
+  text-align: left;
+  font-family: Helvetica;
+	color:#fff;
+  list-style-type: none;
+}
+
+body {
+	margin: 0;
+	text-align: left;
+	font-family: sans-serif;
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
+  background-image: url(../img/starts.gif);
+    height: 100vh;
+    letter-spacing: normal;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+nav{
+  grid-area: 4/6/5/1;
+	margin: auto;
+  width: 100%;
+	padding: 0  0 10% 0;
+	text-align: left;
+}
+
+aside{
+  grid-area:3/6/4/1;
+  width: 100%;
+  padding: 0  0 3% 0;
+  text-align: center;
+}
+
+main{
+	grid-area:2/6/1/1
+}
+
+
+/* unvisited link */
+a:link {
+	color: #fff;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: #fff;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: #ddd;
+  }
+  
+  /* selected link */
+  a:active {
+	color: #aaa;
+  }
+
+
+nav ul {
+	list-style:none;
+	text-align:center;
+}
+
+nav ul li {
+	display:inline-block;
+	position: relative;
+	}
+
+nav ul li a {
+	display:block;
+	text-decoration:none;
+	padding: 10px 10px;
+}
+nav ul li:hover .children {
+	display:block;
+}
+
+nav ul li .children {
+	display: none;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+nav ul li .children li {
+	display:block;
+	overflow: hidden;
+}
+
+nav ul li .children li a {
+	display: block;
+}
+
+nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+/* Navbar container */
+.navbar {
+  font-family: Arial;
+  padding-left: 10px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #A40D27;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  border-radius: 6px;
+  border: 1px solid #000;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1 {
+	padding: 0 2.5%;
+	text-align: center;
+  	font: bold 3em "Lucida Console", Monaco, monospace;
+  	letter-spacing: 0.2px; 
+  	font-weight: lighter;
+}
+
+.imagen{
+  position: sticky;
+  z-index: 1000;
+}
+
+a img:hover {
+  opacity: 0.5;
+}
+
+/*FX*/
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.night {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateZ(140deg);
+  transform: rotateZ(140deg);
+}
+
+.shooting_star {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  height: 2px;
+  background: linear-gradient(-45deg, #ffffff, rgba(255, 255, 255, 0));
+  border-radius: 999px;
+  -webkit-filter: drop-shadow(0 0 6px #699bff);
+  filter: drop-shadow(0 0 6px #699bff);
+  -webkit-animation: tail 4000ms ease-in-out infinite,
+    shooting 4000ms ease-in-out infinite;
+  animation: tail 4000ms ease-in-out infinite,
+    shooting 4000ms ease-in-out infinite;
+}
+.shooting_star::before,
+.shooting_star::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, #72e2ed, #ffffff, #72e2ed);
+  -webkit-transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+  animation: shining 3000ms ease-in-out infinite;
+}
+.shooting_star::after {
+  -webkit-transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.shooting_star:nth-child(1) {
+  top: calc(25% - -37px);
+  left: calc(25% - 14px);
+  -webkit-animation-delay: 8000ms;
+  animation-delay: 8000ms;
+}
+.shooting_star:nth-child(1)::before,
+.shooting_star:nth-child(1)::after,
+.shooting_star:nth-child(1)::after {
+  -webkit-animation-delay: 8000ms;
+  animation-delay: 8000ms;
+}
+
+.shooting_star:nth-child(2) {
+  top: calc(65% - 43px);
+  left: calc(65% - 317px);
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+.shooting_star:nth-child(2)::before,
+.shooting_star:nth-child(2)::after,
+.shooting_star:nth-child(2)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+}
+
+@-webkit-keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+@keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+}
+@-webkit-keyframes sky {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(405deg);
+    transform: rotate(405deg);
+  }
+}
+@keyframes sky {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(405deg);
+    transform: rotate(405deg);
+  }
+}
