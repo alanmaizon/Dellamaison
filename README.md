@@ -1,7 +1,6 @@
-Alan Maizon UCD PA 2024 Full Stack - Module 1
-  Final Proyect
-  Website Development: Dellamaison
-  Version 3.0 includes the following features:
+  Website Development: Dellamaison. 
+  -Version 3.0 
+  -Includes the following features:
 - CSS and HTML estructure
 - Clear navigation
 - Library of modern icons
@@ -14,5 +13,6 @@ Alan Maizon UCD PA 2024 Full Stack - Module 1
 - Responsive in all browsers
   
 ☕
-Alternative Proyect using parallax
+Alternative Proyect using parallax.
 - https://alanmaizon.github.io/melisacorso/
+- Alan Maizon UCD PA 2024 Full Stack - Module 1
