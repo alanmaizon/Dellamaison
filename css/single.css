@@ -196,6 +196,11 @@ a img:hover {
   opacity: 0.5;
 }
 
+
+@media screen and (max-width: 500px) {
+  
+}
+
 /*FX*/
 
 body::before {
