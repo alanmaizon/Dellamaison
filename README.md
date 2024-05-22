@@ -8,7 +8,7 @@ Includes the following features:
 - Dinamic internal taxonomy
 - External links to tickets
 - Contact forms, social media links
-- Extra parallax page built from sratch
+- Extra parallax page, independent 
 - Landing page with interactive background
 - Responsive in all browsers
   
