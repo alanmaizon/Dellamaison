@@ -1,6 +1,6 @@
-  Website Development: Dellamaison. 
-  -Version 3.0 
-  -Includes the following features:
+  Website Development: Dellamaison
+  -- Version 3.0 --
+Includes the following features:
 - CSS and HTML estructure
 - Clear navigation
 - Library of modern icons
