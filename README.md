@@ -9,7 +9,7 @@ Includes the following features:
 - External links to tickets
 - Contact forms, social media links
 - Extra parallax page, independent 
-- Landing page with interactive background
+- Landing page with visual background
 - Responsive in all browsers
   
 ☕
