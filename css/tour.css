@@ -220,6 +220,10 @@ footer ul li {
 a{
     text-decoration: none;}
 	
+i:hover {
+	color: #00531c;
+}
+
   .grid-container2 {
 	position: relative;
 	width: 50%;

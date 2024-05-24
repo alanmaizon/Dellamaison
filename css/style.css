@@ -103,6 +103,11 @@ h3 {
 a.title{
     text-decoration: none;
 }
+	
+i:hover {
+	color: #cccccc;
+}
+
 
  a.button {
    background-color: #000000;
