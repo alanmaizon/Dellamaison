@@ -13,6 +13,6 @@ Includes the following features:
 - Responsive in all browsers
   
 ☕
-Alternative Proyect using parallax.
+Alternative Project using parallax.
 - https://alanmaizon.github.io/melisacorso/
 - Alan Maizon UCD PA 2024 Full Stack - Module 1
