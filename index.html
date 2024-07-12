@@ -1,42 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-	<title>Home | Dellamaison</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Dellamaison introducing a new album. 'Hello World' is out now. Upcoming Tour">
-	<meta name="keywords" content="dellamaison, music, melodies, compositions, classical music, contemporary music">
-	<meta name="author" content="Alan Maizon">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css" >
-	<link rel="stylesheet" href="css/fonts.css" >
-  </head>
-<body>
-    <header>
-		<nav>
-			<ul>
-        		<li><a href="tour.html">Tour</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="merch.html">Merch</a></li>
-			</ul>
-		</nav>
-	</header>
-        <main>
-			<h1>Dellamaison</h1>
-			<img src="img/album.png" alt="New Album" class="center">
-          <h3>Introducing <abbr title="New Album"><a class="title" href="link.html"><i>Hello World</i></a></abbr><br>The exact right time in just the right place</h3>
-			  <p>Order cool merchandise <abbr title="Link to Merch"><a href="merch.html">here</a></abbr><br>The new album "Hello World" is <abbr title="Choose Music Services"><a href="link.html">out now</a></abbr></p>
-			  <a href="tour.html" class="button">Upcoming Tour</a>
-			<br>
-			</main>
-	  <footer>
-		<ul>
-			<li><a href="link.html" class="icon-amazon">&#8203;</a></li>
-			<li><a href="link.html" class="icon-youtube">&#8203;</a></li>
-			<li><a href="link.html" class="icon-appleinc">&#8203;</a></li>
-			<li><a href="link.html" class="icon-spotify">&#8203;</a></li>
-    </ul>
-	<br>
-	</footer>
-  </body>
-</html>
+        function updateMoveHistory() {
+            moveHistoryElement.innerHTML = 'Move History:<br>';
+            moveHistory.forEach((move, index) => {
+                moveHistoryElement.innerHTML += `${index + 1}. ${move.piece} from (${move.fromRow}, ${move.fromCol}) to (${move.toRow}, ${move.toCol})<br>`;
+            });
+        }
+
+        function updateTimer() {
+            if (isPlayerTurn) {
+                whiteTime--;
+                whiteTimerElement.textContent = `White: ${formatTime(whiteTime)}`;
+                if (whiteTime === 0) {
+                    clearInterval(timerInterval);
+                    alert('Black wins on time!');
+                }
+            } else {
+                blackTime--;
+                blackTimerElement.textContent = `Black: ${formatTime(blackTime)}`;
+                if (blackTime === 0) {
+                    clearInterval(timerInterval);
+                    alert('White wins on time!');
+                }
+            }
+        }
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        undoButton.addEventListener('click', () => {
+            if (moveHistory.length > 0) {
+                const lastMove = moveHistory.pop();
+                board[lastMove.fromRow][lastMove.fromCol] = lastMove.piece;
+                board[lastMove.toRow][lastMove.toCol] = lastMove.captured;
+                enPassant = lastMove.enPassantTarget;
+                castlingRights = lastMove.castlingRights;
+                isPlayerTurn = !isPlayerTurn;
+                updateMoveHistory();
+                updateGameStatus();
+                renderBoard();
+            }
+        });
+
+        renderBoard();
+        timerInterval = setInterval(updateTimer, 1000);
+    });
+</script>
