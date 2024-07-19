@@ -470,6 +470,12 @@ footer ul li a {
     .slide-message {
       scale: 60%;
 }
+
+.basket-button {
+  display: none;
+}
+
+
 }
 
 /* Styles for smartphones */
@@ -536,7 +542,7 @@ footer ul li a {
   }
 
   .popup-content {
-    scale: 90%;
+    display: none;
 }
 
 .basket-button {
