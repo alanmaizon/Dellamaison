@@ -408,7 +408,7 @@ display: none;
     }
 
     h1 {
-      padding-top: 20px;
+      padding-top: 50px;
       text-align: center;
       font-size: 40px;
     }
@@ -424,7 +424,7 @@ display: none;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 35vh;
+      height: 38vh;
     }
   
     nav {
