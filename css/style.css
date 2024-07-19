@@ -487,19 +487,13 @@ footer ul li a {
     text-align: left;
   }
 
-.app, #app {
-  scale:120%;
-  padding-top:0;
-  margin-top:0;
-  }
-
   h1 {
     font-size:50px;
     }
     
   .grid-item, #app{
     text-align: center;
-    scale:80%;
+    scale:100%;
   }
 
   footer {
