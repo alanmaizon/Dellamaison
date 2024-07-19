@@ -488,7 +488,9 @@ footer ul li a {
   }
 
 .app, #app {
-  max-width: 90%;
+  scale:120%;
+  padding-top:0;
+  margin-top:0;
   }
 
   h1 {
