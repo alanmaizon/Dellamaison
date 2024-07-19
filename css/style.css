@@ -139,7 +139,7 @@ body {
 }
 
 .app, #app {
-  max-width: 90%;
+  max-width: 70%;
   margin: 0 auto;
   background: white;
   padding: 20px;
