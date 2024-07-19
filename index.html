@@ -1,49 +1,65 @@
-        function updateMoveHistory() {
-            moveHistoryElement.innerHTML = 'Move History:<br>';
-            moveHistory.forEach((move, index) => {
-                moveHistoryElement.innerHTML += `${index + 1}. ${move.piece} from (${move.fromRow}, ${move.fromCol}) to (${move.toRow}, ${move.toCol})<br>`;
-            });
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Search for recipes... The most practical recipes step by step">
+  <meta name="author" content="Alan Maizon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Chez Anna</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="newsletter-popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h2>Join our mailing list!</h2>
+      <p>For exclusive recipes, discounts, oppurtunities and new product announcements - plus few surprises.</p>
+      <form id="newsletter-form">
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <header>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <input type="text" id="searchBar" placeholder="Search for recipes..." oninput="filterRecipes()">
+    <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <button class="basket-button">Basket (0)</button>
+      </nav>
+  </header>
+  <div id="header-top-show">
+    <div class="slide-message active">Wholly healthy food for people who care for the planet</div>
+    <div class="slide-message">Join the plant-based revolution</div>
+    <div class="slide-message">Cook for yourself and share with your friends</div>
+    <div class="slide-message">Eat well, live well</div>
+  </div>
+  <div id="app">
+    <h1>Chez Anna</h1>
+    <small>The most practical recipes step by step</small>
+    <br><br>
+    <div id="recipeGallery">
+      <div id="galleryItems" class="grid-container"></div>
+      <div id="navigation">
+        <button id="prevBtn" onclick="recipeManager.showPreviousPage()">Previous</button>
+        <button id="nextBtn" onclick="recipeManager.showNextPage()">Next</button>
+      </div>
+    </div>
+  </div>
+  <div><br></div>
+  <footer>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
 
-        function updateTimer() {
-            if (isPlayerTurn) {
-                whiteTime--;
-                whiteTimerElement.textContent = `White: ${formatTime(whiteTime)}`;
-                if (whiteTime === 0) {
-                    clearInterval(timerInterval);
-                    alert('Black wins on time!');
-                }
-            } else {
-                blackTime--;
-                blackTimerElement.textContent = `Black: ${formatTime(blackTime)}`;
-                if (blackTime === 0) {
-                    clearInterval(timerInterval);
-                    alert('White wins on time!');
-                }
-            }
-        }
-
-        function formatTime(seconds) {
-            const minutes = Math.floor(seconds / 60);
-            const secs = seconds % 60;
-            return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
-        }
-
-        undoButton.addEventListener('click', () => {
-            if (moveHistory.length > 0) {
-                const lastMove = moveHistory.pop();
-                board[lastMove.fromRow][lastMove.fromCol] = lastMove.piece;
-                board[lastMove.toRow][lastMove.toCol] = lastMove.captured;
-                enPassant = lastMove.enPassantTarget;
-                castlingRights = lastMove.castlingRights;
-                isPlayerTurn = !isPlayerTurn;
-                updateMoveHistory();
-                updateGameStatus();
-                renderBoard();
-            }
-        });
-
-        renderBoard();
-        timerInterval = setInterval(updateTimer, 1000);
-    });
-</script>
+    </ul>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/slide.js"></script>
+</body>
+</html>

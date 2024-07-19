@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Contact | Dellamaison</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="Dellamaison Press, Contact - Management. Send a message">
-  <meta name="keywords" content="contact, management, dellamaison">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search for recipes... The most practical recipes step by step">
   <meta name="author" content="Alan Maizon">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
-    <header>
-		<nav>
-			<ul>
-        		<li><a href="tour.html">Tour</a></li>
-                <li><a href="merch.html">Merch</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="index.html">Home</a></li>
-			</ul>
-		</nav>
-	</header>
+<body>
+  <header>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <button class="basket-button">Basket (0)</button>
+      </nav>
+  </header>
+  <div class="container">
+    <div class="form-column">
+      <form id="contactForm" onsubmit="return validateContactForm()">
+        <h2>Contact Us</h2>
+        <p>We will respond to you as soon as possible</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-	<main>
-    <div class="grid-container">
-      <div class="container">
-        <h1>Contact me</h1>
-    <h3>We'll talk soon</h3>
-
-    <form>
-    <div>
-      <div class="col">
-        <input type="text" id="fname" name="firstname" placeholder="Your name...">
-    </div>
-          <div>
-      <div class="col">
-        <input type="text" id="email" name="email" placeholder="Your email adress...">
-      </div>
-    </div>
-    <div>
-      <div class="col">
-        <textarea rows="6" id="subject" name="subject" placeholder="Comment/Message..."></textarea>
-      </div>
-      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="10" cols="50" maxlength="500" required></textarea>
         <button type="submit">Send Message</button>
-      </div>
+      </form>
     </div>
-</div>
-  </form>
-    </div>
-    <div class="grid-container">
-      <img src="img/logo.png" alt="logo">
 
-  </div></div>
-</main>
+    <div class="form-column">
+      <form id="recipeForm" onsubmit="return validateRecipeForm()" enctype="multipart/form-data">
+        <h2>Submit a Recipe</h2>
+        <p>Help us to feature new recipes on the website</p>
+        <label for="recipeTitle">Title:</label>
+        <input type="text" id="recipeTitle" name="recipeTitle" required>
+        <label for="recipeImage">Image File:</label>
+        <input type="file" id="recipeImage" name="recipeImage" accept="image/*" required>
+        <label for="recipeIngredients">Ingredients (one per line):</label>
+        <textarea id="recipeIngredients" name="recipeIngredients" rows="4" cols="50" required></textarea>
+        <label for="recipeSteps">Steps (one per line):</label>
+        <textarea id="recipeSteps" name="recipeSteps" rows="4" cols="50" required></textarea>
+        <button type="submit">Submit Recipe</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </footer>
+  <script src="js/contact.js"></script>
 </body>
 </html>

@@ -2,79 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Merch | Dellamaison</title>
-  <meta name="description" content="Dellamaison Merchandise - UK Tour 2024 - Buy Tickets Now">
-  <meta name="keywords" content="merchandise, guanaco, dellamaison">
+  <title>Merchandise</title>
+  <meta name="description" content="Search for recipes... The most practical recipes step by step">
   <meta name="author" content="Alan Maizon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="css/merch.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/basket.css">
 </head>
 <body>
-    <header>
-        <img src="img/hotsun.png" alt="logo" id="logo">
-        <h2 id="name">Dellamaison</h2>
-        <nav>
-            <ul>
-              <li><a href="tour.html">Tour</a></li>
-              <li><a href="merch.html">Merch</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="index.html">Home</a></li>
-            </ul>
-          </nav>
-	</header>
-    <h1>Merch</h1>
+  <header>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <nav>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="merch.html">Merchandise</a></li>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+        <button class="basket-button">Basket (0)</button>
+      </nav>
+
+  </header>
+
+    <h1>Merchandise</h1>
+<div class="main-container">
 <div class="merchandise-container">
-  <div class="merchandise-item">
+  <div class="merchandise-item" data-price="29">
     <div class="grid-container2">
-      <img src="img/vinyl.png" alt="Vinyl" class="image">
+      <img src="img/books.jpg" alt="Book" class="image">
       <div class="middle">
-        <div><a href="link.html" class="button">Buy</a></div></div>
+        <div><button class="add-to-basket">Add to Basket</button></div></div>
       </div>
-    <h2>Vinyl Set</h2>
+    <h2>Book Set</h2>
     <h4>€29.99</h4>
-    <p> 12-inch Vinyl<br>UK Special Edition</p>
+    <p>Complete collection<br>Summer Special Edition</p>
   </div>
-  <div class="merchandise-item">
+  <div class="merchandise-item" data-price="19">
     <div class="grid-container2">
-    <img src="img/cd.png" alt="CD" class="image">
+    <img src="img/kitchen.png" alt="Kitchen" class="image">
     <div class="middle">
-      <div><a href="link.html" class="button">Buy</a></div></div>
+      <div><button class="add-to-basket">Add to Basket</button></div></div>
       </div>
-    <h2>CD Set</h2>
+    <h2>Utensil Set</h2>
     <h4>€19.99</h4>
-    <p>Compact Disc<br>UK Special Edition</p>
+    <p>Essential Kitchen tools<br>Summer Special Edition</p>
   </div>
-  <div class="merchandise-item">
+  <div class="merchandise-item" data-price="24">
     <div class="grid-container2">
-    <img src="img/tee-back.png" alt="Tour Tee" class="image">
+    <img src="img/apron.png" alt="Apron" class="image">
     <div class="middle">
-      <div><a href="link.html" class="button" >Buy</a></div></div>
+      <div><button class="add-to-basket">Add to Basket</button></div></div>
     </div>
-    <h2>US Tour Tee</h2>
+    <h2>Chef Apron</h2>
     <h4>€24.99</h4>
     <p>100% Cotton<br>Pink, Grey, White</p>
   </div>
-  <div class="merchandise-item">
+  <div class="merchandise-item" data-price="39">
     <div class="grid-container2">
-    <img src="img/hoodie.png" alt="Tour Hoodie" class="image">
+    <img src="img/handler.png" alt="Handler" class="image">
     <div class="middle">
-      <div><a href="link.html" class="button" >Buy</a></div></div>
+      <div><button class="add-to-basket">Add to Basket</button></div></div>
     </div>
-    <h2>Guanaco Hoodie</h2>
+    <h2>Chef Hat</h2>
     <h4>€39.99</h4>
     <p>100% Cotton<br>Pink, Grey, White</p>
   </div>
 </div>
+<div class="basket-container">
+    <div class="basket-charges">
+        <h2>Order Summary</h2>
+        <br>
+        <p>Subtotal: €<span id="item-total">0</span></p>
+        <p>Fees: €5</p>
+        <p>Shipping: €3</p>
+        <p><strong>Total: €<span id="total-charges">8</span></strong></p><br>
+  <div class="basket-items">
+  </div>
+  <button id="checkoutBtn" class="continue-to-payment">Continue to Payment</button>
+
+  <div id="checkoutPopup" class="popup">
+      <div class="popup-content">
+          <span class="close">&times;</span>
+          <h2 style="text-align: center;">Checkout Purchase</h2>
+          <p style="text-align: center;">Your items have been added to the cart. Please proceed to payment.</p>
+          <img height="200px" src="img/anna2.gif" alt="checkout">
+      </div>
+  </div>
+
+</div>
+</div>
+</div>
 <footer>
-    <br>
     <ul>
-      <li><a href="link.html" class="icon-amazon">&#8203;</a></li>
-      <li><a href="link.html" class="icon-youtube">&#8203;</a></li>
-      <li><a href="link.html" class="icon-appleinc">&#8203;</a></li>
-      <li><a href="link.html" class="icon-spotify">&#8203;</a></li>
-    </ul><br>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+    </ul>
   </footer>
+  <script src="js/merch.js"></script>
 </body>
 </html>
