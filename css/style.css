@@ -484,6 +484,10 @@ footer ul li a {
     text-align: left;
   }
 
+  h1 {
+    font-size:20px;
+    }
+    
   .grid-item, #app{
     text-align: center;
     scale:80%;
