@@ -410,6 +410,7 @@ display: none;
     h1 {
       text-align: center;
       margin-top: 30px;
+      font-size: 60px;
     }
 
     footer {
@@ -423,7 +424,7 @@ display: none;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 25vh;
+      height: 35vh;
     }
   
     nav {
