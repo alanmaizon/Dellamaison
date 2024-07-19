@@ -486,6 +486,7 @@ footer ul li a {
 
   .grid-item, #app{
     text-align: center;
+    scale:80%;
   }
 
   footer {
@@ -542,7 +543,7 @@ footer ul li a {
   }
 
   .popup-content {
-    display: none;
+    scale:90%;
 }
 
 .basket-button {
