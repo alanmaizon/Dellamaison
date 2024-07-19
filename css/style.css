@@ -418,7 +418,10 @@ footer ul li a {
     align-items: center;
     padding: 10px;
     font-size: 1em;
-    
+  }
+  
+  .app, #app {
+  max-width: 90%;
   }
   
   header nav ul {
@@ -484,8 +487,12 @@ footer ul li a {
     text-align: left;
   }
 
+.app, #app {
+  max-width: 90%;
+  }
+
   h1 {
-    font-size:40px;
+    font-size:60px;
     }
     
   .grid-item, #app{
