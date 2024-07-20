@@ -54,6 +54,7 @@ ${selectedRecipe.steps.join('\n')}
     return '';
   }
 
+  
   function exportRecipe() {
     const recipeText = getRecipeText();
     if (recipeText) {

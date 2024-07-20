@@ -1,28 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      document.getElementById('newsletter-popup').style.display = 'flex';
-    }, 3000);
-  });
+  setTimeout(function() {
+    document.getElementById('newsletter-popup').style.display = 'flex';
+  }, 3000);
+});
 
 function closePopup() {
-    document.getElementById('newsletter-popup').style.display = 'none';
-  }
+  document.getElementById('newsletter-popup').style.display = 'none';
+}
 
 document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var email = document.getElementById('email').value;
-    if (validateEmail(email)) {
-      alert('Thank you for signing up!');
-      closePopup();
-    } else {
-      alert('Please enter a valid email address.');
-    }
+  event.preventDefault();
+  var email = document.getElementById('email').value;
+  if (validateEmail(email)) {
+    alert('Thank you for signing up!');
+    closePopup();
+  } else {
+    alert('Please enter a valid email address.');
+  }
 });
 
 function validateEmail(email) {
-    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
 }
+
+//Gallery Item clickeable button
 
 class Recipe {
   constructor(title, image, ingredients, steps) {
@@ -110,10 +112,6 @@ class RecipeManager {
     }
   }
 
-//The JSON.stringify() static method converts a JavaScript value to a JSON string, 
-//optionally replacing values if a replacer function is specified or optionally including 
-//only the specified properties if a replacer array is specified.
-
   showRecipeDetails(title) {
     const recipe = this.recipes.find(recipe => recipe.title === title);
     localStorage.setItem('selectedRecipe', JSON.stringify(recipe));
@@ -121,14 +119,19 @@ class RecipeManager {
   }
 
   filterRecipes(searchTerm) {
-    const filteredRecipes = this.recipes.filter(recipe => recipe.title.toLowerCase().includes(searchTerm.toLowerCase()));
-    this.currentFilteredRecipes = filteredRecipes;
+    this.currentFilteredRecipes = this.recipes.filter(recipe => recipe.title.toLowerCase().includes(searchTerm.toLowerCase()));
     this.currentPage = 0;
     this.showGallery();
+
+    const searchResultsMessage = document.getElementById('searchResultsMessage');
+    if (this.currentFilteredRecipes.length === 0) {
+      searchResultsMessage.style.display = 'block';
+    } else {
+      searchResultsMessage.style.display = 'none';
+    }
   }
 }
 
-// Initialize RecipeManager
 const recipes = [
   {
     title: "Pancakes",
@@ -230,6 +233,3 @@ document.getElementById('searchBar').addEventListener('input', (e) => {
 
 // Initialize gallery
 recipeManager.showGallery();
-
-
-
