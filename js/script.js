@@ -209,7 +209,7 @@ const recipes = [
     steps: ["Simmer coconut milk with curry paste.", "Add tofu, vegetables, soy sauce, and sugar.", "Cook until vegetables are tender.", "Stir in lime juice, serve over rice."]
   },
   {
-    title: "Vegan Mushroom Stroganoff",
+    title: "Mushroom Stroganoff",
     image: "img/stroganoff.jpg",
     ingredients: ["8 oz pasta of choice", "1 lb mushrooms, sliced", "1 onion, diced", "3 cloves garlic, minced", "1 cup vegetable broth", "1 cup cashew cream (blend soaked cashews with water)", "2 tbsp soy sauce", "2 tbsp nutritional yeast", "1 tbsp olive oil"],
     steps: ["Cook pasta according to package instructions.", "Sauté onion and garlic in olive oil until soft.", "Add mushrooms, cook until browned.", "Stir in broth, cashew cream, soy sauce, and nutritional yeast, simmer until thickened."],

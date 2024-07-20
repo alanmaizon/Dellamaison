@@ -274,8 +274,12 @@ button:hover {
   max-width: 200px;
   height: auto;
   margin-bottom: 20px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+
+}
+
+#recipeImage {
+  width: fit-content;
+  margin: 40px;
 }
 
 #navigation {
