@@ -10,11 +10,11 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  margin: 30px;
-  width: 90%;
+  margin: 0;
 }
 .form-column {
-  width: 35%;
+  width: 30vw;
+  height: 100vh;
   
 }
 .form-column form {
@@ -279,7 +279,7 @@ button:hover {
 
 #recipeImage {
   width: fit-content;
-  margin: 40px;
+  margin: 0;
 }
 
 #navigation {
@@ -463,7 +463,7 @@ footer ul li a {
 
   .container {
     flex-direction: column;
-    margin: 10px;
+    margin: 0;
   }
 
   .form-column {
