@@ -1,4 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+
+  //Slide messages
+  const messages = document.querySelectorAll('.slide-message');
+  let currentSlide = 0;
+  const interval = 6000; // Time each slide is displayed
+  const transitionDuration = 1000; // Time it takes for slide transition
+
+  function showNextMessage() {
+    // Hide the current slide
+    messages[currentSlide].classList.remove('active');
+    messages[currentSlide].classList.add('out');
+
+    // Update the current slide index
+    currentSlide = (currentSlide + 1) % messages.length;
+
+    // Show the next slide
+    setTimeout(() => {
+      messages[currentSlide].classList.remove('out');
+      messages[currentSlide].classList.add('active');
+    }, transitionDuration);
+  }
+
+  // Initialize the first slide
+  messages[currentSlide].classList.add('active');
+
+  // Set interval to show the next message automatically
+  setInterval(showNextMessage, interval);
+
+  //Popup newsletter
   setTimeout(function() {
     document.getElementById('newsletter-popup').style.display = 'flex';
   }, 3000);
@@ -233,3 +262,36 @@ document.getElementById('searchBar').addEventListener('input', (e) => {
 
 // Initialize gallery
 recipeManager.showGallery();
+
+
+//Contact form
+
+function validateContactForm() {
+  const message = document.getElementById('message').value;
+  const wordCount = message.trim().split(/\s+/).length;
+
+  if (wordCount > 20) {
+    alert("Message must be no longer than 20 words.");
+    return false;
+  }
+
+  alert("Contact form submitted successfully!");
+  document.getElementById('contactForm').reset();
+  return false;
+}
+
+function validateRecipeForm() {
+  const title = document.getElementById('recipeTitle').value;
+  const image = document.getElementById('recipeImage').files[0];
+  const ingredients = document.getElementById('recipeIngredients').value;
+  const steps = document.getElementById('recipeSteps').value;
+
+  if (!title || !image || !ingredients || !steps) {
+    alert("All recipe fields are required.");
+    return false;
+  }
+
+  alert("Recipe form submitted successfully!");
+  document.getElementById('recipeForm').reset();
+  return false;
+}
