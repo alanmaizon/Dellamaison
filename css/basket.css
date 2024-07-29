@@ -336,6 +336,7 @@ display: none;
     background-color: #107210;
   }
 
+
   /* Styles for tablets */
 @media (max-width: 768px) {
     header, footer {
