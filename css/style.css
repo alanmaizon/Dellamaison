@@ -376,7 +376,7 @@ footer ul li a {
 }
 
 .popup-content img {
-  width: 50%;
+  width: 70%;
   border-radius: 5px;
     align-items: center;
   justify-content: center;
@@ -397,14 +397,14 @@ footer ul li a {
   cursor: pointer;
 }
 
-.popup-content form {
+.popup-content {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-.popup-content form input {
+.popup-content input {
   padding: 10px;
   margin: 10px 0;
   width: 70%;
@@ -435,6 +435,7 @@ footer ul li a {
 
 /* Styles for tablets */
 @media (max-width: 768px) {
+  
   header, footer {
     display: flex;
     flex-direction: column;
@@ -491,9 +492,6 @@ footer ul li a {
     margin-bottom: 20px;
   }
 
-  .popup-content {
-    scale: 50%;
-  }
     .slide-message {
       scale: 60%;
 }
@@ -512,7 +510,8 @@ footer ul li a {
   }
 
   h1 {
-    font-size:50px;
+    font-size:3em;
+    padding: 0;
     }
     
   .grid-item, #app{

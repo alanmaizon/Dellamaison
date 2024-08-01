@@ -10,18 +10,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <form id="newsletter-form">
   <div id="newsletter-popup" class="popup">
     <div class="popup-content">
       <span class="close-btn" onclick="closePopup()">&times;</span>
       <h2>Join our mailing list!</h2>
       <p>For exclusive recipes, discounts, opportunities and new product<br>announcements - plus few surprises.</p>
       <img src="img/healthy.gif" alt="healthy_gif">
-      <form id="newsletter-form">
         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
         <button type="submit">Submit</button>
-      </form>
     </div>
   </div>
+</form>
   <header>
     <img src="img/logo.png" alt="Logo" class="logo">
     <input type="text" id="searchBar" placeholder="Search for recipes..." oninput="filterRecipes()">
