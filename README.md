@@ -1,10 +1,10 @@
-#Dellamaison#
+# Dellamaison
 
-##Module 2 - Javascript
+## Module 2 - Javascript
 
-###UCD Professional Academy
+### UCD Professional Academy
 
-####User Stories 🍏
+#### User Stories 🍏
 
 - As a visitor, I want to view a list of recipes so that I can choose one to cook.
 
