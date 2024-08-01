@@ -112,6 +112,7 @@ p {
 }
 
 .app, #app {
+  text-align: left;
   max-width: 70%;
   margin: 0 auto;
   background: white;
@@ -257,6 +258,11 @@ button:hover {
   margin: 20px;
   padding: 20px;
 }
+#recipeDetails li {
+  text-align: left;
+  margin-left: 30px;
+}
+
 
 #recipeDetails img {
   max-width: 200px;
@@ -501,6 +507,11 @@ footer ul li a {
     scale:100%;
   }
 
+  #recipeDetails li {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
   footer {
     display: flex;
     flex-direction: column;
