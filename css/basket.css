@@ -368,7 +368,7 @@ display: none;
       margin: 0;
       padding: 0;
     }
-
+     
     footer ul li {
       margin: 0 5px;
     }
@@ -392,15 +392,18 @@ display: none;
       display: flex;
       flex-direction: column;
       gap: 10px;
+
     }
   
     .merchandise-item {
+      height: 100%;
       width: 100%;
       margin-bottom: 20px;
     }
   
     .basket-container {
       width: 100%;
+      height: 100%;
       margin-top: 20px;
     }
   }
@@ -474,7 +477,8 @@ display: none;
     }
   
     .merchandise-item {
-      height: 100%;
+      width: 100%;
+      height: max-content;
       margin-bottom: 20px;
     }
   
