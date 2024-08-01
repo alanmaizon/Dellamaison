@@ -10,18 +10,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <form id="newsletter-form">
-  <div id="newsletter-popup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <h2>Join our mailing list!</h2>
-      <p>For exclusive recipes, discounts, opportunities and new product<br>announcements - plus few surprises.</p>
-      <img src="img/healthy.gif" alt="healthy_gif">
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-        <button type="submit">Submit</button>
-    </div>
-  </div>
-</form>
   <header>
     <img src="img/logo.png" alt="Logo" class="logo">
     <input type="text" id="searchBar" placeholder="Search for recipes..." oninput="filterRecipes()">
@@ -34,12 +22,6 @@
         <button class="basket-button">Basket (0)</button>
       </nav>
   </header>
-  <div id="header-top-show">
-    <div class="slide-message active">Wholly healthy food for people who care for the planet</div>
-    <div class="slide-message">Join the plant-based revolution</div>
-    <div class="slide-message">Cook for yourself and share with your friends</div>
-    <div class="slide-message">Eat well, live well</div>
-  </div>
   <div id="app">
     <h1>Dellamaison</h1>
     <small>The most practical recipes step by step</small>
@@ -52,6 +34,12 @@
         <button id="nextBtn" onclick="recipeManager.showNextPage()">Next</button>
       </div>
     </div>
+    <div id="header-top-show">
+      <div class="slide-message active">Wholly healthy food for people who care for the planet</div>
+      <div class="slide-message">Join the plant-based revolution</div>
+      <div class="slide-message">Cook for yourself and share with your friends</div>
+      <div class="slide-message">Eat well, live well</div>
+    </div>
   </div>
   <div><br></div>
   <footer>
@@ -61,6 +49,18 @@
 
     </ul>
   </footer>
+  <form id="newsletter-form">
+    <div id="newsletter-popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Join our mailing list!</h2>
+        <p>For exclusive recipes, discounts, opportunities and new product<br>announcements - plus few surprises.</p>
+        <img src="img/healthy.gif" alt="healthy_gif">
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
   <script src="js/script.js"></script>
 </body>
 </html>
