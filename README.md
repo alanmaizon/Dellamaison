@@ -1,4 +1,10 @@
-*User Stories*
+# Dellamaison - Food Recipes Website
+
+## Module 2 - Javascript
+
+### UCD Professional Academy
+
+#### User Stories 🍏
 
 - As a visitor, I want to view a list of recipes so that I can choose one to cook.
 
@@ -72,7 +78,7 @@ Acceptance Criteria:
 There is a "Checkout" button in the basket view.
 Clicking the "Checkout" button opens a modal or navigates to a checkout page.
 
-*Optional/Advanced User Stories*
+#### Optional/Advanced User Stories 🍔
 
 - As a visitor, I want the basket to persist even if I leave the page or close the browser so that I don't lose my selected items.
   
