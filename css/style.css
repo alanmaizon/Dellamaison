@@ -143,9 +143,11 @@ p {
   flex-direction: column;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 .form-column form label {
   margin-top: 10px;
+  text-align: left;
 }
 .form-column form input,
 .form-column form textarea,
@@ -509,7 +511,7 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 38vh;
+    height: 33vh;
   }
 
   nav {
@@ -550,6 +552,7 @@ footer ul li a {
   .form-column {
     width: 90%;
     margin-bottom: 20px;
+    text-align: left;
   }
 
   .popup-content {
