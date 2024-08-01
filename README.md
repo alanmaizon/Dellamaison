@@ -1,4 +1,4 @@
-# Dellamaison
+# Dellamaison - Food Recipes Website
 
 ## Module 2 - Javascript
 
