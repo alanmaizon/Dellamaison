@@ -369,7 +369,7 @@ footer ul li a {
   text-align: center;
 }
 .popup-content p {
-  margin-top: 0;
+  margin: 10px;
   text-align: center;
 }
 .popup-content .close-btn {
@@ -417,7 +417,7 @@ footer ul li a {
 
 
 /* Styles for tablets */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   
   header, footer {
     display: flex;
@@ -472,6 +472,7 @@ footer ul li a {
 
   .form-column {
     width: 90%;
+    height: min-content;
     margin-bottom: 20px;
   }
 
@@ -552,6 +553,7 @@ footer ul li a {
   .form-column {
     width: 90%;
     margin-bottom: 20px;
+    height: min-content;
     text-align: left;
   }
 
