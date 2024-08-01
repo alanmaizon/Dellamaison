@@ -352,7 +352,7 @@ display: none;
 
 
   /* Styles for tablets */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     header, footer {
       display: flex;
       justify-content: space-between;
@@ -362,6 +362,7 @@ display: none;
     }
   
     header nav ul {
+      align-items: center;
       display: flex;
       flex-direction: row;
       margin: 0;
