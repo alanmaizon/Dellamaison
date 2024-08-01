@@ -1,9 +1,12 @@
-/* General reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
+  font-family: Helvetica;
+  color: #000000;
+  background-color: #ffffff;
+  list-style-type: none;
 }
 
 body {
@@ -51,8 +54,6 @@ nav ul li a:hover {
 
 a {
   font-family: helvetica;
-  font-size: 16;
-  line-height: 24px;
 }
 
 a:link {
@@ -341,6 +342,15 @@ display: none;
   }
 
 
+
+
+
+
+
+
+
+
+
   /* Styles for tablets */
 @media (max-width: 768px) {
     header, footer {
@@ -348,7 +358,7 @@ display: none;
       justify-content: space-between;
       align-items: center;
       padding: 10px;
-      font-size: 0.9em;
+      font-size: 1em;
     }
   
     header nav ul {
@@ -359,8 +369,15 @@ display: none;
     }
   
     header nav ul li {
-      margin: 0 5px;
+      margin-top: 20%;
+      padding: 0;
     }
+  
+        header nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 20px 10px;
+      }
   
     footer ul {
       display: flex;
@@ -441,6 +458,12 @@ display: none;
       align-items: center;
     }
     
+    nav ul {
+      margin: 0;
+      list-style: none;
+      display: flex;
+    }
+    
     header nav ul li a {
       display: block;
       text-decoration: none;
@@ -478,7 +501,7 @@ display: none;
   
     .merchandise-item {
       width: 100%;
-      height: max-content;
+      height: max;
       margin-bottom: 20px;
     }
   
