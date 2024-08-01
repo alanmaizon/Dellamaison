@@ -343,7 +343,6 @@ display: none;
 
   /* Styles for tablets */
 @media (max-width: 768px) {
-
     header, footer {
       display: flex;
       justify-content: space-between;
@@ -369,7 +368,7 @@ display: none;
       margin: 0;
       padding: 0;
     }
-  
+
     footer ul li {
       margin: 0 5px;
     }
@@ -377,7 +376,6 @@ display: none;
     .container {
       flex-direction: column;
       margin: 10px;
-      align-items: center;
     }
   
     .form-column {
@@ -386,36 +384,24 @@ display: none;
     }
   
     .main-container {
-      align-items: center;
-      text-align: center;
       display: flex;
       flex-direction: column;
-      margin: 10px;
     }
   
     .merchandise-container {
-      align-items: center;
-      text-align: center;
+      display: flex;
       flex-direction: column;
       gap: 10px;
     }
   
-  
     .merchandise-item {
       width: 100%;
-      height: 100%;
       margin-bottom: 20px;
     }
   
     .basket-container {
-      display: flex;
-      flex-direction: column;
-      width:90%;
-      margin-bottom: 20px;
-    }
-
-    .basket-button {
-      display: none;
+      width: 100%;
+      margin-top: 20px;
     }
   }
   
@@ -476,24 +462,20 @@ display: none;
     }
   
     .main-container {
-      align-items: center;
-      text-align: center;
       display: flex;
       flex-direction: column;
       margin: 10px;
     }
   
     .merchandise-container {
-      align-items: center;
-      text-align: center;
+      display: flex;
       flex-direction: column;
       gap: 10px;
     }
   
-    .merchandise-item{
+    .merchandise-item {
       height: 100%;
       margin-bottom: 20px;
-
     }
   
     .basket-container {
