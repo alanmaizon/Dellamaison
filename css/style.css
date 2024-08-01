@@ -269,16 +269,26 @@ button:hover {
   margin-bottom: 10px;
 }
 
+#recipe {
+  text-align: left;
+  margin: 20px;
+  padding: 20px;
+}
+
 #recipeDetails img {
   max-width: 200px;
   height: auto;
   margin-bottom: 20px;
+}
 
+#recipeDetails button {
+  margin: 10px;
 }
 
 #recipeImage {
   width: fit-content;
-  margin: 0;
+  border-radius: 7px;
+  margin: 20px;
 }
 
 #navigation {
