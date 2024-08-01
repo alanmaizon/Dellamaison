@@ -78,7 +78,7 @@ Acceptance Criteria:
 There is a "Checkout" button in the basket view.
 Clicking the "Checkout" button opens a modal or navigates to a checkout page.
 
-*Optional/Advanced User Stories*
+#### Optional/Advanced User Stories 🍔
 
 - As a visitor, I want the basket to persist even if I leave the page or close the browser so that I don't lose my selected items.
   
