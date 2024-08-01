@@ -24,7 +24,8 @@ window.onclick = function(event) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+  //Shopping basket
+  document.addEventListener('DOMContentLoaded', function () {
   const basketContainer = document.querySelector('.basket-items');
   const totalChargesElement = document.getElementById('total-charges');
   const itemTotalElement = document.getElementById('item-total');

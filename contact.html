@@ -13,6 +13,7 @@
 <body>
   <header>
     <a href="index.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+    <h3>Dellamaison</h3>
     <nav>
         <ul>
           <li><a href="contact.html">Contact Us</a></li>
@@ -25,7 +26,7 @@
   <div class="container">
     <div class="form-column">
       <form id="contactForm" onsubmit="return validateContactForm()">
-        <h2>Contact Us</h2>
+        <h2>Send a Message</h2>
         <p>We will respond to you as soon as possible</p>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -33,7 +34,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="10" cols="50" maxlength="500" required></textarea>
+        <textarea id="message" name="message" rows="7" cols="50" maxlength="500" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
@@ -47,9 +48,9 @@
         <label for="recipeImage">Image File:</label>
         <input type="file" id="recipeImage" name="recipeImage" accept="image/*" required>
         <label for="recipeIngredients">Ingredients (one per line):</label>
-        <textarea id="recipeIngredients" name="recipeIngredients" rows="4" cols="50" required></textarea>
+        <textarea id="recipeIngredients" name="recipeIngredients" rows="2" cols="50" required></textarea>
         <label for="recipeSteps">Steps (one per line):</label>
-        <textarea id="recipeSteps" name="recipeSteps" rows="4" cols="50" required></textarea>
+        <textarea id="recipeSteps" name="recipeSteps" rows="2" cols="50" required></textarea>
         <button type="submit">Submit Recipe</button>
       </form>
     </div>

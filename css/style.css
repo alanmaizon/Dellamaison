@@ -160,7 +160,7 @@ body {
 }
 
 h1 {
-
+  padding: 0 40px;
   text-align: center;
   font: normal 3em 'New Times Roman', georgia;
   letter-spacing: 0.2px;
@@ -179,8 +179,7 @@ h3 {
   font: normal 2em georgia, sans-serif;
   font-weight: lighter;
   letter-spacing: 0.2px;
-  padding: 10px;
-  color: #000000;
+  color: #3b8b49;
 }
 
 h4 {
@@ -343,7 +342,6 @@ footer ul li a {
   transform: translateY(100%);
 }
 
-
 .popup {
   display: none;
   position: fixed;
@@ -363,13 +361,24 @@ footer ul li a {
   border-radius: 5px;
   text-align: center;
   position: relative;
+  width: 50%;
+  height: auto;
 }
 
+.popup-content img {
+  width: 50%;
+  border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+}
 .popup-content h2 {
   margin-top: 0;
   text-align: center;
 }
-
+.popup-content p {
+  margin-top: 0;
+  text-align: center;
+}
 .popup-content .close-btn {
   position: absolute;
   top: 10px;
@@ -379,15 +388,16 @@ footer ul li a {
 }
 
 .popup-content form {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .popup-content form input {
   padding: 10px;
   margin: 10px 0;
-  width: 80%;
+  width: 70%;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
