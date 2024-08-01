@@ -4,6 +4,16 @@
 
 ### UCD Professional Academy
 
+####Slogan: *"The most practical recipes step by step"*
+####Focus: *Healthy, plant-based recipes*
+
+####Features:
+- Encourages joining the plant-based revolution
+- Promotes sharing recipes with friends and shop products
+- Highlights the benefits of eating well for a better life
+- Mailing list subscription for exclusive recipes and discounts
+
+
 #### User Stories 🍏
 
 - As a visitor, I want to view a list of recipes so that I can choose one to cook.
