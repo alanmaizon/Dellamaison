@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="img/logo.png">
   <title>Dellamaison | Contact</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
@@ -26,7 +27,7 @@
   <div class="container">
     <div class="form-column">
       <form id="contactForm" onsubmit="return validateContactForm()">
-        <h2>Send a Message</h2>
+        <h2><i class="fa fa-envelope"></i> Send a Message</h2>
         <p>We will respond to you as soon as possible</p>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -41,7 +42,7 @@
 
     <div class="form-column">
       <form id="recipeForm" onsubmit="return validateRecipeForm()" enctype="multipart/form-data">
-        <h2>Submit a Recipe</h2>
+        <h2><i class="fa fa-bookmark"></i> Submit a Recipe</h2>
         <p>Help us to feature new recipes on the website</p>
         <label for="recipeTitle">Title:</label>
         <input type="text" id="recipeTitle" name="recipeTitle" required>

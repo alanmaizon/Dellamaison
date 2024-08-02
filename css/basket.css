@@ -222,22 +222,46 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
 }
 
 .popup-content {
-    text-align: center;
     background-color: #fefefe;
     margin: 5% auto; /* 5% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 600px; /* Max width */
+    width:fit-content; /* Could be more or less, depending on screen size */
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .popup-content img{
   width: 50%;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.popup-content p {
+  margin: 10px;
+  text-align: center;
+}
+.popup-content .close-btn {
+  align-items: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .close {
@@ -349,7 +373,7 @@ display: none;
 
 
   /* Styles for tablets */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     header, footer {
       display: flex;
       justify-content: space-between;
@@ -441,6 +465,12 @@ display: none;
       align-items: center;
       padding: 10px;
     }
+
+    footer ul {
+      display: block;
+      text-decoration: none;
+      padding: 20px 0;
+    }
   
     header {
       display: flex;
@@ -467,12 +497,6 @@ display: none;
       text-decoration: none;
       font-size: 16px;
       padding: 0;
-    }
-  
-    footer ul {
-      display: block;
-      text-decoration: none;
-      padding: 20px 0;
     }
 
     .container {

@@ -302,29 +302,16 @@ button:hover {
 }
 
 
-footer {
-  display:grid;
-  text-align: center;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; 
-  display: inline-block; 
+footer ul li a {
+  text-decoration: none;
+  padding: 10px;
 }
 
 footer ul li {
-  display: inline-block; 
-  margin-bottom: 10px; 
-  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); /* White shadow */
-}
-
-footer ul li a {
-  text-decoration: none; 
-  padding: 10px; 
-  color: inherit; 
 }
 
 #header-top-show {
@@ -378,6 +365,10 @@ footer ul li a {
   position: relative;
   width: 50%;
   height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-content img {
@@ -400,13 +391,6 @@ footer ul li a {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
-}
-
-.popup-content {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .popup-content input {
@@ -472,16 +456,16 @@ footer ul li a {
       max-width: 90%;
       }
 
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-  }
-
-  footer ul li {
-    margin: 0 5px;
-  }
+      footer ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+      }
+       
+      footer ul li {
+        margin: 0 5px;
+      }
 
   #searchBar {
     width: 50%;
@@ -522,6 +506,7 @@ footer ul li a {
   .grid-item, #app{
     text-align: center;
     scale:100%;
+    margin-top: 50px;
   }
 
   #recipeDetails li {
@@ -534,6 +519,12 @@ footer ul li a {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+  }
+  
+  footer ul {
+    display: block;
+    text-decoration: none;
+    padding: 20px 0;
   }
 
   header {
@@ -563,28 +554,23 @@ footer ul li a {
     padding: 0;
   }
 
-  footer ul {
-    display: block;
-    text-decoration: none;
-    padding: 20px 0;
-  }
-
   #searchBar {
     width: 65%;
   }
 
   .container {
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin: 0;
+    text-align: center;
+    width: 85vw;
+    margin-top: 50px;
   }
 
   .form-column {
 
-    width: 80%;
-    margin: 20px;
     height: min-content;
-    text-align: left;
+
+    margin: 0;
   }
 
   .popup-content {
