@@ -61,7 +61,7 @@ Each item includes an image, name, and price.
 - As a visitor, I want to view detailed information about a merchandise item so that I can make an informed purchasing decision.
   
 Acceptance Criteria:
-Clicking on an item shows detailed information including a larger image, description, price, and available sizes or options.
+Preview detailed information including a image, description, price, and available sizes or options.
 
 - As a visitor, I want to add items to my basket so that I can purchase them later.
   
