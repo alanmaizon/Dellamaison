@@ -212,28 +212,32 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
 }
 
 .popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     justify-content: center;
     align-items: center;
 }
 
 .popup-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 5% from the top and centered */
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width:fit-content; /* Could be more or less, depending on screen size */
+    width: fit-content;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .popup-content img{
@@ -248,6 +252,7 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
   margin: 10px;
   text-align: center;
 }
+
 .popup-content .close-btn {
   align-items: right;
   position: absolute;
@@ -255,13 +260,6 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
-}
-
-.popup-content {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .close {
@@ -285,7 +283,6 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
     grid-template-columns: 2fr 1fr;
     gap: 0;
     padding: 10px;
-    
   }
   
   .merchandise-container, .basket-container {
@@ -293,7 +290,6 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
     padding: 20px;
     
   }
-  
 
 .basket-container {
     padding: 20px;
@@ -302,74 +298,66 @@ button.add-to-basket:hover, button.continue-to-payment:hover {
 
 .basket-container h2, .order-summary h2 {
     font-family: Helvetica;
-    text-align: left;
+    text-align: center;
     font-size: 18px;
     margin: 0;
 }
 
 .basket-charges, .order-summary {
-    text-align: left;
-
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 
-.basket-charges p, .order-summary p {
+.order-summary p {
     font-size: 16px;
 }
 
 .basket-item img {
 display: none;
-
 }
 
 .basket-item  {
 	display: inline;
-    text-align: left;
+  text-align: left;
   }
 
-  .basket-charges {
-    background-color: #ffffff;
-  }
-  
-  
-  .basket-charges p {
-    text-align: left;
-    padding: 5px;
-  }
+.basket-charges {
+  background-color: #ffffff;
+}
 
-  
-  .basket-item button {
-	background-color: #0da433;
-	color: white;
-	font-size: 11px;
-	padding: 5px;
-	border-radius: 5px;
-	border-style: none;
-	text-decoration: none;
-  }
+.basket-charges p {
+  text-align: center;
+  padding: 5px;
+}
 
-  .basket-item {
-    padding: 5px;
+.basket-item button {
+  background-color: #0da433;
+  color: white;
+  font-size: 11px;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: none;
+  text-decoration: none;
+}
+.basket-item {
+  padding: 5px;
+}
+button {
+  background-color: #1fa40d;
+  color: white;
+  font-size: 11px;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  text-decoration: none;
+  width:fit-content;
+}
 
-  }
 
-  button {
-    background-color: #1fa40d;
-    color: white;
-    font-size: 11px;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    text-decoration: none;
-    width:fit-content;
-  }
-  
-  
-  button:hover {
-    background-color: #107210;
-  }
+button:hover {
+  background-color: #107210;
+}
 
 
   /* Styles for tablets */
